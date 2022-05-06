@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let num = prompt()
+
+    function isFibonacci(c) {
+        let a = 0;
+        let b = 1;
+        let sum = 0;
+        let check ;
+        for (let count = 0; count < 50; count++) {
+            sum = a + b;
+            if (c == sum) {
+                check = true ;
+                break;
+            }
+            a = b;
+            b = sum;
+        }
+        if (check){
+            alert(true);
+        }else {
+            alert(false)
+        }
+    }
+
+    isFibonacci(num)
+</script>
+
+
+
